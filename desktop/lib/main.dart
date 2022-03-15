@@ -7,7 +7,7 @@ import 'package:desktop_window/desktop_window.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   if(!kIsWeb&& Platform.isMacOS||Platform.isWindows||Platform.isLinux){
- await  DesktopWindow.setMinWindowSize(const Size(600,800));
+ await  DesktopWindow.setMinWindowSize(const Size(900,500));
 
   }
   runApp(const MyApp());
