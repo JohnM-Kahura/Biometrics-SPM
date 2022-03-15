@@ -1,3 +1,4 @@
+import 'package:desktop/pages/home/home.dart';
 import 'package:desktop/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ class AppContainer extends StatelessWidget {
                 SideMenu(),
                 // home page
                 // have to check if is authenticated
+                Expanded(child: Home()),
               ],
             ),
           ),
