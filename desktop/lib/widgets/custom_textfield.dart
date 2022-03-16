@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 Widget customTextFeild(double height, double width, String hint,
-    TextEditingController controller, TextInputType inputType) {
+    TextEditingController controller, TextInputType inputType,bool obsecureText) {
   return Container(
     height: height,
     width: width,
+    
     margin: const EdgeInsets.all(4),
     child: TextField(
+      obscureText: obsecureText,
       controller: controller,
+      
       // autofocus: true,
       keyboardType: inputType,
       decoration: InputDecoration(
