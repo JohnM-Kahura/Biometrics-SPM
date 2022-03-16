@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 TextStyle sideMenuText=  const TextStyle(
@@ -11,9 +10,14 @@ TextStyle bottomTabLeading= const TextStyle(
   fontWeight: FontWeight.bold,
 
 );
+TextStyle titleStyle= const TextStyle(
+  color: Colors.black,
+  fontWeight: FontWeight.bold,
+
+);
 TextStyle bottomTabUserInfo= const TextStyle(
   color: Colors.black,
-  fontWeight: FontWeight.w500,
+  fontWeight: FontWeight.w700,
 
 );
 
