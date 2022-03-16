@@ -9,7 +9,7 @@ class BottomTab extends StatefulWidget {
 }
 
 class _BottomTabState extends State<BottomTab> {
-  bool scannerConnected=false;
+  bool scannerConnected=true;
   @override
   Widget build(BuildContext context) {
     return Container(
