@@ -68,7 +68,7 @@ class _UserVerificationState extends State<UserVerification> {
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(children: [
-              Icon(Icons.person, size: 50),
+              const Icon(Icons.person, size: 50),
               Container(
                 height: 50,
                 decoration: BoxDecoration(

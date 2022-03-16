@@ -95,7 +95,7 @@ class _AppContainerState extends State<AppContainer> {
             height: 60,
             width: double.infinity,
             color: Colors.blue,
-            child: BottomTab(),
+            child: const  BottomTab(),
           ),
         ],
       ),
@@ -105,11 +105,11 @@ class _AppContainerState extends State<AppContainer> {
   buildPages() {
     switch (selectedIndex) {
       case 0:
-        return Home();
+        return const  Home();
       case 1:
-        return UserVerification();
+        return const  UserVerification();
       case 2:
-        return Settings();
+        return const  Settings();
     }
   }
 }
