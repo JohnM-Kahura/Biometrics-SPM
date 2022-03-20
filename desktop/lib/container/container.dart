@@ -1,5 +1,4 @@
 import 'package:desktop/config/style.dart';
-import 'package:desktop/pages/auth/auth.dart';
 import 'package:desktop/pages/home/home.dart';
 import 'package:desktop/pages/settings/settings.dart';
 import 'package:desktop/pages/verify/verify.dart';
@@ -25,7 +24,7 @@ bool isAuthenticated=true;
           Expanded(
             child: Row(
               children: [
-                // SideMenu(),
+             
                 NavigationRail(
                   extended: true,
                   leading: Row(
@@ -44,7 +43,7 @@ bool isAuthenticated=true;
                   ),
                   selectedIconTheme: const IconThemeData(
                     color: Colors.white,
-                    // size: 50,
+                 
                   ),
                   backgroundColor: const Color.fromARGB(255, 11, 11, 61),
                   selectedIndex: selectedIndex,
@@ -79,15 +78,9 @@ bool isAuthenticated=true;
                         )),
                   ],
                 ),
-
-                // have to check if is authenticated
-                if(isAuthenticated)
                 Expanded(
                   child: buildPages(),
-                ),
-                if(!isAuthenticated)
-               const  Expanded(child: Auth())
-                
+                ), 
               ],
             ),
           ),
