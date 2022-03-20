@@ -9,7 +9,7 @@ class Auth extends StatefulWidget {
 }
 
 class _AuthState extends State<Auth> {
-  TextEditingController emailController= TextEditingController();
+  TextEditingController usernameController= TextEditingController();
   TextEditingController passwordController= TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class _AuthState extends State<Auth> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            customTextFeild(50, double.infinity, 'Email', emailController, TextInputType.emailAddress,false),
+            customTextFeild(50, double.infinity, 'Username', usernameController, TextInputType.emailAddress,false),
             customTextFeild(50, double.infinity, 'Password', passwordController, TextInputType.visiblePassword,true),
             Container(
                 margin: const EdgeInsets.only(top: 30),
