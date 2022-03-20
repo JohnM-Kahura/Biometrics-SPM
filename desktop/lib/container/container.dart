@@ -15,7 +15,7 @@ class AppContainer extends StatefulWidget {
 
 class _AppContainerState extends State<AppContainer> {
   int selectedIndex = 0;
-  bool isAuthenticated=true;
+bool isAuthenticated=true;
 
   @override
   Widget build(BuildContext context) {
