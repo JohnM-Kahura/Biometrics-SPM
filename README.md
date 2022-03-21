@@ -1,5 +1,5 @@
 # Biometrics-SPM
 Group project 
 
-## done with the UI 
+## Front end done with flutter
 ## backend will be done in python and PHP 
