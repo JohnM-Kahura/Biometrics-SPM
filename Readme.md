@@ -10,3 +10,5 @@ _There will be issues with the face_recognition
 library and I advise you watch a tutorial
 from YouTube._
 
+create a Folder and Call it Attendance_Images
+Put your Images therein. That should be all
