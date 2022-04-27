@@ -1,5 +1,3 @@
-import imp
-from sys import api_version
 from django.urls import path
 from .views  import StudentList,StudentDetail
 app_name='api'
