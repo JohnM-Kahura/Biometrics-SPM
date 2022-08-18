@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
                 margin: const EdgeInsets.only(top: 30),
                 child: TextButton(
                   onPressed: () async {
-                    var url = Uri.parse('http://127.0.0.1:8000/api/');
+                    var url = Uri.parse('https://spm-biometrics.herokuapp.com/api/');
 
                     if (firstnameController.text.isNotEmpty &&
                         middlenameController.text.isNotEmpty &&

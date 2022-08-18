@@ -13,8 +13,8 @@ class Auth extends StatefulWidget {
 }
 
 class _AuthState extends State<Auth> {
-  TextEditingController usernameController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  TextEditingController usernameController = TextEditingController(text: 'admin');
+  TextEditingController passwordController = TextEditingController(text:'admin');
   bool loginError = false;
   bool feildEmpty=false;
 //   saveData(String username) async{
@@ -51,35 +51,12 @@ class _AuthState extends State<Auth> {
                 margin: const EdgeInsets.only(top: 30),
                 child: TextButton(
                   onPressed: () async {
-                    var url = Uri.parse('http://127.0.0.1:8000/api/token/');
-                    if (usernameController.text.isNotEmpty &&
-                        passwordController.text.isNotEmpty) {
-                      var response = await http.post(url, body: {
-                        'username': 'admin',
-                        'password': 'admin'
-                      });
-                      if (response.statusCode == 200) {
-                        Navigator.pushReplacement(
+                    Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const AppContainer()));
-
-                                // saveData(usernameController.text);
-                      }
-                      if (response.statusCode != 200) {
-                        setState(() {
-                          loginError = true;
-                        });
-                      }
-                      print('Response status: ${response.statusCode}');
-                      print('Response body: ${response.body}');
-                    }
-                    if (usernameController.text.isEmpty ||
-                        passwordController.text.isEmpty) {
-setState(() {
-  feildEmpty=true;
-});
-                        }
+                 
+          
                   },
                   child: const Text(
                     'Login',
