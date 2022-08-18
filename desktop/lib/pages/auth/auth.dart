@@ -2,7 +2,7 @@ import 'package:desktop/container/container.dart';
 import 'package:desktop/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 
 
 class Auth extends StatefulWidget {
@@ -17,12 +17,12 @@ class _AuthState extends State<Auth> {
   TextEditingController passwordController = TextEditingController();
   bool loginError = false;
   bool feildEmpty=false;
-  saveData(String username) async{
-final prefs = await SharedPreferences.getInstance();
-await prefs.setString('username', username);
+//   saveData(String username) async{
+// // final prefs = await SharedPreferences.getInstance();
+// await prefs.setString('username', username);
 
 
-  }
+//   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,7 +64,7 @@ await prefs.setString('username', username);
                             MaterialPageRoute(
                                 builder: (context) => const AppContainer()));
 
-                                saveData(usernameController.text);
+                                // saveData(usernameController.text);
                       }
                       if (response.statusCode != 200) {
                         setState(() {
