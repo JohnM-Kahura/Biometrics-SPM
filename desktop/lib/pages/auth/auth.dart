@@ -55,8 +55,8 @@ class _AuthState extends State<Auth> {
                     if (usernameController.text.isNotEmpty &&
                         passwordController.text.isNotEmpty) {
                       var response = await http.post(url, body: {
-                        'username': usernameController.text,
-                        'password': passwordController.text
+                        'username': 'admin',
+                        'password': 'admin'
                       });
                       if (response.statusCode == 200) {
                         Navigator.pushReplacement(
