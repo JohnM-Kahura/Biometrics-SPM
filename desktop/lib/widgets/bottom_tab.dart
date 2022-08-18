@@ -1,7 +1,6 @@
 import 'package:desktop/config/style.dart';
 import 'package:desktop/pages/auth/auth.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class BottomTab extends StatefulWidget {
   const BottomTab({Key? key}) : super(key: key);
