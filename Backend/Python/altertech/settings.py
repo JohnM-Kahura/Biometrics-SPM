@@ -158,3 +158,6 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
 }
+# Configure Django App for Heroku.
+import django_on_heroku
+django_on_heroku.settings(locals())
